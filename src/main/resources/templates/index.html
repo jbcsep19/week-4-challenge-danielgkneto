@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: header" />
+<body>
+<div th:replace="base :: navlinks" />
+<main role="main" class="container">
+    <div class="jumbotron">
+        <div th:replace="blog-entries :: entry1" />
+        <div th:replace="blog-entries :: entry2" />
+    </div>
+</main>
+<div th:replace="base :: footer" />
+<div th:replace="base :: scripts" />
+
+</body>
+</html>

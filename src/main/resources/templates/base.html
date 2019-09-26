@@ -7,7 +7,12 @@
     <link href="https://fonts.googleapis.com/css?family=Vibes&display=swap" rel="stylesheet">
     <title th:fragment="head-title">Daniel's Blog</title>
     <style>
+        html {
+            position: relative;
+            min-height: 100%;
+        }
         body {
+            margin-bottom: 60px;
             background: url("https://res.cloudinary.com/dtudwqsqx/image/upload/v1569527083/matrix_wallpaper_quampg.jpg") no-repeat center center fixed;
             -webkit-background-size: cover;
             -moz-background-size: cover;
@@ -16,6 +21,13 @@
         }
         .title {
             font-family: 'Vibes', cursive;
+        }
+        .footer {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background-color: #f5f5f5;
         }
     </style>
 </head>
@@ -49,8 +61,11 @@
         </ul>
     </div>
 </nav>
-<footer th:fragment="footer" class="page-footer font-small blue">
-    <div class="footer-copyright text-center py-3 jumbotron">©2018 Copyright - Daniel</div>
+
+<footer th:fragment="footer" class="footer font-small">
+    <div class="container">
+        <div class="footer-copyright text-center py-3 jumbotron">©2019 Copyright - Daniel</div>
+    </div>
 </footer>
 <div th:fragment="scripts">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
