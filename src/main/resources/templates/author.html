@@ -3,13 +3,25 @@
 <head th:replace="base :: header" />
 <body>
 <div th:replace="base :: navlinks" />
-<div class="container bg-light px-5 py-3">
+<div class="container bg-light px-5 py-3 col-3">
     <div class="row">
-        <div class="py-3 col-12 text-justify">
+        <div class="py-3 text-justify">
             <h1 class="py-3 text-center">About the Author</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur commodi cumque debitis dolorem illum in modi, molestias optio pariatur quos tempore totam voluptatum? Accusantium, neque quidem quo ratione sunt vel.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium consequuntur cupiditate ea esse eum excepturi expedita facilis, illo in ipsam minima minus neque nisi perspiciatis quaerat quia quos repellat ullam!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aperiam ea incidunt, iusto maxime natus quisquam ut veniam. Delectus magnam officia, pariatur quia rerum sunt vero! Harum nostrum praesentium voluptatum.</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A autem ea excepturi libero maxime molestiae nemo placeat quo? Amet animi architecto cupiditate doloribus dolorum eligendi magni nisi vero vitae voluptatem?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias at beatae corporis distinctio enim minus mollitia, necessitatibus nemo neque nobis officiis omnis placeat porro, quo repellendus sunt temporibus unde vel!</p>
+            <div th:fragment="entry2" class="row">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <img src="https://res.cloudinary.com/dtudwqsqx/image/upload/v1566402015/ptdnixnreokr0thl4dzz.jpg" class="card-img-top mb-4">
+                        <h5 class="card-title">Daniel</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur consequatur deleniti eos excepturi fugiat illo illum ipsum iure laboriosam maiores molestias odio odit pariatur quasi recusandae, repellat, sed unde voluptates.</span></p>
+                        <a href="#" class="fa fa-twitter"></a>
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                        <a href="#" class="fa fa-github"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>

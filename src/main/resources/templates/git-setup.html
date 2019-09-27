@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: header" />
+<body>
+<div th:replace="base :: navlinks" />
+<div class="container bg-light px-5 py-3">
+    <div class="row">
+        <div class="py-3 col-12 text-justify">
+            <h1 class="py-3 text-center">Git Setup</h1>
+            <p>Do this every time you move machines.<br><br></p>
+            <p>Everything you need to know to setup all your git configuration, and also how to commit and push your work<br><br></p>
+            <pre><strong>git config --global user.name "yourUsername"</strong><br><strong>git config --global user.email "yourEmail@domain.com"</strong></pre>
+            <p><br>Do this every time you create a new project.<br><br></p>
+            <pre><strong>git init</strong><br><strong>git remote add origin <code class="hljs language-shell">https://github.com/<em>USERNAME</em>/<em>REPOSITORY</em>.git</code></strong></pre>
+            <p><br>Do this every time you want to save and upload your project on GitHub.</p>
+            <pre><strong>git add .</strong><br><strong>git commit -m "descriptive message"</strong><br><strong>git push -u origin master</strong></pre>
+            <p>&nbsp;</p>
+            <p>Already have a GitHub link? Follow the steps below:</p>
+            <p>1. To see where you are pushing your current project to:</p>
+            <pre><code class="hljs language-shell"><strong>git remote -v</strong><br>Expected output:
+&gt; origin  git@github.com:<em>USERNAME/REPOSITORY</em>.git (fetch)
+&gt; origin  git@github.com:<em>USERNAME/REPOSITORY</em>.git (push)</code></pre>
+            <p>2. Reset it with the<span>&nbsp;</span><code>git remote set-url</code><span>&nbsp;</span>command.</p>
+            <pre><strong><code class="hljs language-shell">git remote set-url origin https://github.com/<em>USERNAME</em>/<em>REPOSITORY</em>.git</code></strong></pre>
+            <p>3. Verify that you've changed the link.</p>
+            <pre><code class="hljs language-shell"><strong>git remote -v</strong><br>Expected output:
+&gt; origin  https://github.com/<em>USERNAME/REPOSITORY</em>.git (fetch)
+&gt; origin  https://github.com/<em>USERNAME/REPOSITORY</em>.git (push)</code></pre>
+            <p>&nbsp;</p>
+        </div>
+    </div>
+</div>
+<div th:replace="base :: footer" />
+<div th:replace="base :: scripts" />
+
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="base :: header" />
+<body>
+<div th:replace="base :: navlinks" />
+<div class="container bg-light px-5 py-3">
+    <div class="row">
+        <div class="py-3 col-12 text-justify">
+            <h1 class="py-3 text-center">How to use Git branches</h1>
+<!--            <h1 class="page-title">Git Branch</h1>-->
+            <p>Check which branch you're currently on:</p>
+            <pre style="padding-left: 40px;">git branch</pre>
+            <p>Make and switch to a new branch:</p>
+            <pre style="padding-left: 40px;">git checkout -b branchName</pre>
+            <p>Switch to a different branch:</p>
+            <pre style="padding-left: 40px;">git checkout branchName</pre>
+            <p>Pull from a branch:</p>
+            <pre style="padding-left: 40px;">git pull origin branchName</pre>
+            <p>Push to a branch:</p>
+            <pre style="padding-left: 40px;">git push origin branchName</pre>
+            <p>To merge branchB onto branchA:</p>
+            <p>(if you are not in branchA already, )</p>
+            <pre style="padding-left: 40px;">git checkout branchA<br><br>git merge branchB</pre>
+            <p>To delete branchB:</p>
+            <p>(double check before you erase that this is what you want to do)</p>
+            <pre style="padding-left: 40px;">git checkout branchA<br><br>git branch -d branchB</pre>
+            <p>Two options to add:</p>
+            <p style="padding-left: 40px;">To add everything:</p>
+            <pre style="padding-left: 80px;">git add .</pre>
+            <p style="padding-left: 40px;">To add a single file (read this one carefully):</p>
+            <pre style="padding-left: 80px;">git add fileName.extensionType</pre>
+
+        </div>
+    </div>
+</div>
+<div th:replace="base :: footer" />
+<div th:replace="base :: scripts" />
+
+</body>
+</html>
+
+

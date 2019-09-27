@@ -22,26 +22,36 @@ public class HomeController {
 
     @RequestMapping("/github")
     public String github() {
-        return "github";
+        return "redirect:/";
     }
 
     @RequestMapping("/algorithms")
     public String algorithms() {
-        return "algorithms";
+        return "redirect:/";
     }
 
     @RequestMapping("/core-java")
     public String coreJava() {
-        return "core-java";
+        return "redirect:/";
     }
 
     @RequestMapping("/oop-java")
     public String oOPJava() {
-        return "oop-java";
+        return "redirect:/";
     }
 
     @RequestMapping("/html-css")
     public String htmlCss() {
-        return "html-css";
+        return "redirect:/";
+    }
+
+    @RequestMapping("/git-branch")
+    public String gitBranch() {
+        return "git-branch";
+    }
+
+    @RequestMapping("/git-setup")
+    public String gitSetup() {
+        return "git-setup";
     }
 }
