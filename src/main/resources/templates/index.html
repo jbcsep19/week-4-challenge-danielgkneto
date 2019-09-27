@@ -3,12 +3,12 @@
 <head th:replace="base :: header" />
 <body>
 <div th:replace="base :: navlinks" />
-<main role="main" class="container">
-    <div class="jumbotron">
-        <div th:replace="blog-entries :: entry1" />
-        <div th:replace="blog-entries :: entry2" />
-    </div>
-</main>
+<div class="container">
+    <h1 class="text-light display-1 text-center title">Daniel's Blog</h1>
+    <div th:replace="blog-entries :: entry2" />
+    <div th:replace="blog-entries :: entry2" />
+    <div th:replace="blog-entries :: entry2" />
+</div>
 <div th:replace="base :: footer" />
 <div th:replace="base :: scripts" />
 
